@@ -45,6 +45,10 @@ button {
   box-shadow: 5px 5px;
 }
 
+button:hover {
+  color: red;
+}
+
 .form-section {
   display: flex;
   flex-direction: column;
