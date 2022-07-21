@@ -1,11 +1,16 @@
 import './style.css';
+import submitScore from './submitScore';
+import displayScores from './displayScores';
 
-const scores = document.querySelectorAll('li');
+const submitBtn = document.querySelector('.submit-btn');
+const refreshBtn = document.querySelector('.refresh-btn');
 
-scores.forEach((score, index) => {
-  if (index % 2 === 0) {
-    score.classList.add('color');
-  } else {
-    score.classList.remove('color');
-  }
+displayScores();
+
+submitBtn.addEventListener('click', () => {
+  submitScore();
+});
+
+refreshBtn.addEventListener('click', () => {
+  displayScores();
 });
