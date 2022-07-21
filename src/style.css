@@ -47,6 +47,10 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  color: rgb(248, 19, 19);
+}
+
 .form-section {
   display: flex;
   flex-direction: column;
@@ -68,8 +72,12 @@ li {
   font-weight: 500;
 }
 
+li:hover {
+  color: rgb(243, 57, 10);
+}
+
 .color {
-  background-color: rgb(93, 99, 99);
+  background-color: rgb(224, 178, 26);
 }
 
 .other {
@@ -78,7 +86,7 @@ li {
 
 input {
   padding: 10px 20px;
-  border: 3px solid black;
+  border: 3px solid rgb(18, 19, 18);
   background-color: rgb(252, 243, 230);
 }
 
@@ -86,5 +94,5 @@ input::placeholder {
   font-family: inherit;
   font-size: 18px;
   font-weight: 500;
-  color: rgb(10, 10, 10);
+  color: rgb(177, 80, 80);
 }
